@@ -19,8 +19,9 @@ public interface SearchBookContract {
 
         /**
          * 显示错误
+         * @param msg 错误信息
          */
-        void showError();
+        void showError(String msg);
     }
 
     interface Presenter{

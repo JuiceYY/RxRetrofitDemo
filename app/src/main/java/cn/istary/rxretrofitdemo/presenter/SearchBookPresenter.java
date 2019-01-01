@@ -6,7 +6,7 @@ import javax.inject.Inject;
 
 import cn.istary.rxretrofitdemo.SearchBookContract;
 import cn.istary.rxretrofitdemo.adapter.BookAdapter;
-import cn.istary.rxretrofitdemo.data.BookResponse;
+import cn.istary.rxretrofitdemo.data.response.BookResponse;
 import cn.istary.rxretrofitdemo.data.model.SearchBookModel;
 
 /*
@@ -38,6 +38,11 @@ public class SearchBookPresenter implements SearchBookContract.Presenter {
             public void handleData(List<BookResponse> bookResponseList) {
                 BookAdapter adapter = new BookAdapter(bookResponseList);
                 view.showBooks(adapter);
+            }
+
+            @Override
+            public void handleError(String errorMsg) {
+                view.showError(errorMsg);
             }
         });
     }

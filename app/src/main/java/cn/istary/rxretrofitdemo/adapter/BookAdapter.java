@@ -5,7 +5,6 @@ package cn.istary.rxretrofitdemo.adapter;
  * DESCRIPTION:
  */
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -18,7 +17,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import cn.istary.rxretrofitdemo.R;
-import cn.istary.rxretrofitdemo.data.BookResponse;
+import cn.istary.rxretrofitdemo.data.response.BookResponse;
 
 public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder>{
 

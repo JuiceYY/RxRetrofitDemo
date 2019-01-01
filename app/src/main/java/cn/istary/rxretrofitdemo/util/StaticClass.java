@@ -9,4 +9,6 @@ public class StaticClass {
 
     public static final String DOMAIN = "https://book.douban.com/";
 
+    public static final String MYTAG = "mydemo";
+
 }

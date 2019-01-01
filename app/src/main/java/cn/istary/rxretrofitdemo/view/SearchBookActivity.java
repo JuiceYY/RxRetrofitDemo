@@ -61,7 +61,7 @@ public class SearchBookActivity extends AppCompatActivity implements View.OnClic
     }
 
     @Override
-    public void showError() {
-        Toast.makeText(this, "发生了一些错误", Toast.LENGTH_SHORT).show();
+    public void showError(String msg) {
+        Toast.makeText(this, "发生了一些错误: "+msg, Toast.LENGTH_SHORT).show();
     }
 }
