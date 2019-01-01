@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <!--每一项item的高度必须是wrapcontent-->
+
+    <ImageView
+        android:id="@+id/bookImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:mipmap/sym_def_app_icon"/>
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:text="biaoti"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bookImg"
+        android:layout_toEndOf="@id/bookImg"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:text="author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookTitle"
+        android:layout_alignStart="@id/bookTitle"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/bookYear"
+        android:text="year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/bookTitle"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@id/bookTitle"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
