@@ -1,0 +1,3 @@
+#RxRetrofitDemo
+
+Retrofit和Rxjava网络请求的mvp模式简单封装, 获取的是豆瓣图书搜索时的搜索推荐列表
