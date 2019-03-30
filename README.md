@@ -2,7 +2,7 @@
 
 Retrofit和Rxjava网络请求的mvp模式简单封装, 获取的是豆瓣图书搜索时的搜索推荐列表
 
-![demo](https://publicpics-1252866204.cos.ap-chengdu.myqcloud.com/1546348507515_video%5B1%5D.gif)
+<a href="https://publicpics-1252866204.cos.ap-chengdu.myqcloud.com/1546348507515_video%5B1%5D.gif" target="_blank">点击查看效果</a>
 
 ## mvp的设计思路
 model层负责数据的请求, 通过接口回调给presenter层进行逻辑处理, 然后presenter调用view的方法将数据显示在用户界面上, presenter在中间负责调用m层和v层, 通过中间层presenter, 使view(视图层, 即activity)与model(数据层)解耦
